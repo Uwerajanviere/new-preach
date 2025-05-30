@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { MobileMenu } from "@/app/mobile-menu"
 import { useEffect, useState } from "react"
+import Image from "next/image"
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false)
@@ -62,10 +63,23 @@ export function Navigation() {
                 Watch Live
               </Button>
             </Link>
-            {/* Support Button */}
-            {/* <Button className="bg-amber-500 text-black hover:bg-amber-600">
-              Support
-            </Button> */}
+            <form action="https://www.paypal.com/donate" method="post" target="_top" className="hidden md:flex">
+              <input type="hidden" name="hosted_button_id" value="Z4UPJDXNDFCQJ" />
+              <input 
+                type="image" 
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" 
+                name="submit" 
+                title="PayPal - The safer, easier way to pay online!" 
+                alt="Donate with PayPal button" 
+                className="cursor-pointer"
+              />
+              <Image 
+                src="https://www.paypal.com/en_RW/i/scr/pixel.gif" 
+                alt="" 
+                width={1} 
+                height={1} 
+              />
+            </form>
             <MobileMenu />
           </div>
         </div>

@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Worship - Audio Songs",
   description: "Listen to worship songs and audio content",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -30,6 +30,6 @@ export default function RootLayout({
         </ThemeProvider>
         <Toaster />
       </body>
-c    </html>
+    </html>
   )
 }

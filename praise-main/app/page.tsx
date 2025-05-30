@@ -58,6 +58,51 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Spiritual Resources Section */}
+        <section className="py-16 md:py-24 bg-black/40 backdrop-blur-sm">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">Spiritual Resources</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Daily Prayer */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h3 className="text-2xl font-semibold text-white mb-4">Daily Prayer</h3>
+                <p className="text-white/80">Begin each day with a heart full of gratitude and faith. Morning prayers set the tone for a day filled with God's presence and guidance.</p>
+              </div>
+
+              {/* Bible Study */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h3 className="text-2xl font-semibold text-white mb-4">Bible Study</h3>
+                <p className="text-white/80">Explore the depths of God's word through our comprehensive study materials. Discover timeless wisdom and divine guidance in scripture.</p>
+              </div>
+
+              {/* Worship Music */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h3 className="text-2xl font-semibold text-white mb-4">Worship Music</h3>
+                <p className="text-white/80">Experience the power of worship through our curated collection of hymns and contemporary Christian music that uplifts the soul.</p>
+              </div>
+
+              {/* Prayer Requests */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h3 className="text-2xl font-semibold text-white mb-4">Prayer Requests</h3>
+                <p className="text-white/80">Our community stands together in faith, lifting up prayers for those in need. Share your journey and find strength in collective prayer.</p>
+              </div>
+
+              {/* Devotionals */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h3 className="text-2xl font-semibold text-white mb-4">Daily Devotionals</h3>
+                <p className="text-white/80">Nourish your spirit with daily reflections and meditations. Each devotional is crafted to inspire and strengthen your walk with God.</p>
+              </div>
+
+              {/* Community */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                <h3 className="text-2xl font-semibold text-white mb-4">Join Community</h3>
+                <p className="text-white/80">Be part of a welcoming community of believers. Together, we grow in faith, share in fellowship, and support one another in our spiritual journey.</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   )
