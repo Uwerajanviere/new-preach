@@ -41,7 +41,7 @@ export function Navigation() {
           {/* Navigation Links - Centered */}
           <nav className="hidden md:flex items-center justify-center flex-1 px-8">
             <div className="flex items-center space-x-12">
-              <Link href="/#listen-section" className="text-white hover:text-white/80 transition">
+              <Link href="/#latest-sermons" className="text-white hover:text-white/80 transition">
                 Watch
               </Link>
               <Link href="/about" className="text-white hover:text-white/80 transition">
@@ -55,10 +55,10 @@ export function Navigation() {
 
           {/* Action Buttons */}
           <div className="flex items-center gap-4">
-            <Link href="/#listen-section">
+            <Link href="/#latest-sermons">
               <Button
                 variant="outline"
-                className="hidden md:flex border-white text-white hover:bg-white/20 hover:text-white"
+                className="hidden md:flex border-amber-400 text-amber-400 hover:bg-amber-400/20 hover:text-amber-400"
               >
                 Watch Live
               </Button>

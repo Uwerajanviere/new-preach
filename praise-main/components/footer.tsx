@@ -15,7 +15,7 @@ export function Footer() {
 
           {/* Navigation */}
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 text-amber-400">
-            <Link href="/#listen-section" className="hover:underline">
+            <Link href="/#latest-sermons" className="hover:underline">
               WATCH
             </Link>
             <span className="hidden md:inline text-amber-400/50">|</span>
@@ -67,7 +67,7 @@ export function Footer() {
           <div className="text-center text-amber-400/80 text-sm px-4">
             <p>
               © {new Date().getFullYear()} Atlantic Gateway Communications, Inc. Atlantic Gateway Communications, Inc.
-              serves and ministers to people globally through its ministries – WGTS 91.9, WGBZ 88.3, Sermons, Teachings &
+              serves and ministers to people globally through its ministries – MARTIN, Sermons, Teachings &
               Messages.
             </p>
           </div>

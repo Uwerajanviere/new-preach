@@ -22,10 +22,10 @@ export default function PrivacyPolicyPage() {
 
       <Navigation />
       
-      <main className="container mx-auto px-4 py-12 max-w-4xl relative z-10">
-        <h1 className="text-4xl font-bold text-white mb-8">Privacy Policy</h1>
-        
-        <div className="prose prose-invert max-w-none bg-black/50 backdrop-blur-sm p-8 rounded-lg">
+      <main className="flex-1 container mx-auto px-4 py-16 pt-28 relative z-10">
+        <div className="max-w-4xl mx-auto bg-black/40 backdrop-blur-sm p-8 rounded-xl">
+          <h1 className="text-4xl font-bold text-white mb-8">Privacy Policy</h1>
+          
           <p className="text-white/90 mb-6">
             Last updated: {lastUpdated}
           </p>

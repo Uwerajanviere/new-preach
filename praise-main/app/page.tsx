@@ -28,14 +28,14 @@ export default function Home() {
             </h1>
             <p className="text-xl text-white/90 mb-8">MATTHEW 28:19</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#listen-section">
+              <a href="#latest-sermons">
                 <Button className="bg-amber-400 text-black hover:bg-amber-500 flex items-center gap-2 w-full sm:w-auto">
                   <Play className="h-5 w-5" />
                   Start Watching
                 </Button>
               </a>
               <Link href="/collections">
-                <Button variant="outline" className="border-white text-white hover:bg-white/20 w-full sm:w-auto">
+                <Button variant="outline" className="border-amber-400 text-amber-400 hover:bg-amber-400/20 w-full sm:w-auto">
                   Browse Sermons
                 </Button>
               </Link>
@@ -44,7 +44,7 @@ export default function Home() {
         </section>
 
         {/* Sermons Section */}
-        <section id="listen-section" className="py-16 md:py-24 bg-black/50 backdrop-blur-sm">
+        <section id="latest-sermons" className="py-16 md:py-24 bg-black/50 backdrop-blur-sm">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">Latest Sermons</h2>
 

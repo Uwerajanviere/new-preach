@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function MobileMenu() {
   const [open, setOpen] = useState(false)
@@ -29,37 +30,45 @@ export function MobileMenu() {
               className="text-white text-lg py-2 hover:text-white/80 transition"
               onClick={() => setOpen(false)}
             >
-              Listen
+              Watch
             </a>
-            <Link
-              href="/about"
-              className="text-white text-lg py-2 hover:text-white/80 transition"
-              onClick={() => setOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              href="/contact"
-              className="text-white text-lg py-2 hover:text-white/80 transition"
-              onClick={() => setOpen(false)}
-            >
-              Contact Us
-            </Link>
-            <Link
-              href="/support"
-              className="text-white text-lg py-2 hover:text-white/80 transition"
-              onClick={() => setOpen(false)}
-            >
-              Support Us
-            </Link>
+            <div className="flex flex-col gap-4">
+              <Link href="/about" onClick={() => setOpen(false)}>
+                <Button variant="ghost" className="w-full justify-start text-white hover:bg-white/10">
+                  About
+                </Button>
+              </Link>
+              <Link href="/#latest-sermons" onClick={() => setOpen(false)}>
+                <Button variant="ghost" className="w-full justify-start text-white hover:bg-white/10">
+                  Latest Sermons
+                </Button>
+              </Link>
+              <Link href="/contact" onClick={() => setOpen(false)}>
+                <Button variant="ghost" className="w-full justify-start text-white hover:bg-white/10">
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
           </nav>
           <div className="mt-auto p-4 flex flex-col gap-4">
-            <Link href="/#listen-section" onClick={() => setOpen(false)}>
-              <Button className="w-full bg-white text-blue-900 hover:bg-white/90">Listen Live</Button>
+            <Link href="/#latest-sermons" onClick={() => setOpen(false)}>
+              <Button className="w-full bg-amber-400 text-black hover:bg-amber-500">Watch Now</Button>
             </Link>
-            <Link href="/support" onClick={() => setOpen(false)}>
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Give Now</Button>
-            </Link>
+            <form action="https://www.paypal.com/donate" method="post" target="_top" className="w-full">
+              <input type="hidden" name="hosted_button_id" value="Z4UPJDXNDFCQJ" />
+              <Button 
+                type="submit"
+                className="w-full bg-amber-400 hover:bg-amber-500 text-black"
+              >
+                Give Now
+              </Button>
+              <Image 
+                src="https://www.paypal.com/en_RW/i/scr/pixel.gif" 
+                alt="" 
+                width={1} 
+                height={1} 
+              />
+            </form>
           </div>
         </div>
       </SheetContent>

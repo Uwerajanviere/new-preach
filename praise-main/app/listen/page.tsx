@@ -34,7 +34,7 @@ export default function ListenPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2">Sermon Title {item}</h3>
                 <p className="text-white/70 mb-4">Preacher Name</p>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                <Button className="w-full bg-amber-400 hover:bg-amber-500 text-black">
                   <Play className="mr-2 h-4 w-4" /> Watch Now
                 </Button>
               </CardContent>

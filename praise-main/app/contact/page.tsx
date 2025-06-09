@@ -92,7 +92,8 @@ export default function ContactPage() {
                   <Phone className="text-amber-400 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium text-white">Phone</h3>
-                    <p className="text-white/80">(250) 788 717 557</p>
+                    <p className="text-white/80">(250) 788354235
+</p>
                   </div>
                 </div>
 
@@ -100,7 +101,7 @@ export default function ContactPage() {
                   <Mail className="text-amber-400 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium text-white">Email</h3>
-                    <p className="text-white/80"> gigiclaudine@yahoo.com</p>
+                    <p className="text-white/80"> martin.ntirushwa.martin@gmail.com</p>
                   </div>
                 </div>
 
